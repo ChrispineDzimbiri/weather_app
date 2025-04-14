@@ -127,13 +127,7 @@ Widget build(BuildContext context) {
                         ],
                       ),
                       const Divider(),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text("Wind Speed", style: TextStyle(fontSize: 16, color: Colors.black87)),
-                          Text("14 km/h", style: TextStyle(fontSize: 16, color: Colors.black54)),
-                        ],
-                      ),
+
                       const Divider(),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
