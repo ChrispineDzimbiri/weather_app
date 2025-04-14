@@ -86,7 +86,7 @@ Widget build(BuildContext context) {
               // Weather animation
               SizedBox(
                 height: 180,
-                child: Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
+                child: Lottie.asset(getWeatheranimation(_weather?.mainCondition)),
               ),
 
               // Temperature
