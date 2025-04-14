@@ -17,6 +17,8 @@ class WeatherService{
 
     if (response.statusCode == 200){
       return Weather.fromJson(jsonDecode(response.body));
+    }else{
+      throw Exception('Weather data failed to load.');
     }
 
   }
