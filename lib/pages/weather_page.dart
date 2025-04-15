@@ -47,6 +47,12 @@ Color getBackgroundColor(String? condition) {
 }
 
 @override
+void initState() {
+  super.initState();
+  _fetchWeather();
+}
+
+@override
 Widget build(BuildContext context) {
   return Scaffold(
     backgroundColor: getBackgroundColor(_weather?.mainCondition),
