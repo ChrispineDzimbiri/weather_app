@@ -4,6 +4,8 @@ import 'pages/weather_page.dart';
 
 
 void main() {
+
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
