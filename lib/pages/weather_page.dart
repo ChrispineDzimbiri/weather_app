@@ -29,5 +29,24 @@ String getWeatherAnimation(String? condition) {
   }
 }
 
+Color getBackgroundColor(String? condition) {
+  if (condition == null) return const Color(0xFFE3F2FD); // Soft blue
+  switch (condition.toLowerCase()) {
+    case 'clear':
+      return const Color(0xFFFFF3E0); // Soft orange
+    case 'clouds':
+      return const Color(0xFFCFD8DC); // Soft grey-blue
+    case 'rain':
+    case 'drizzle':
+      return const Color(0xFFB3E5FC); // Soft rain blue
+    case 'thunderstorm':
+      return const Color(0xFFD1C4E9); // Soft purple
+    default:
+      return const Color(0xFFE0E0E0); // Neutral grey
+  }
+}
+
+
+
 
 
