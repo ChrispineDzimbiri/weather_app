@@ -46,6 +46,11 @@ Color getBackgroundColor(String? condition) {
   }
 }
 
+@override
+void initState() {
+  super.initState();
+  _fetchWeather();
+}
 
 
 
