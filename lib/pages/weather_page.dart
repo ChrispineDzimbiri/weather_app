@@ -114,3 +114,24 @@ Widget build(BuildContext context) {
   ],
   ),
   const SizedBox(height: 24),
+  Text(
+  _weather!.cityName,
+  style: const TextStyle(
+  fontSize: 32,
+  fontWeight: FontWeight.bold,
+  color: Colors.black87,
+  ),
+  ),
+  Text(
+  DateFormat('EEEE, MMM d • hh:mm a').format(DateTime.now()),
+  style: const TextStyle(color: Colors.black54, fontSize: 14),
+  ),
+
+  const SizedBox(height: 12),
+
+  // Weather animation
+  SizedBox(
+  height: 180,
+  child: Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
+  ),
+
