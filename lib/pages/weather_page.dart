@@ -71,3 +71,12 @@ Widget build(BuildContext context) {
   )
   ],
   ),
+  body: SafeArea(
+  child: Padding(
+  padding: const EdgeInsets.all(16),
+  child: _weather == null
+  ? const Center(child: CircularProgressIndicator())
+      : SingleChildScrollView(
+  child: Column(
+  children: [
+  // Search
