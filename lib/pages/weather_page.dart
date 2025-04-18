@@ -135,3 +135,23 @@ Widget build(BuildContext context) {
   child: Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
   ),
 
+  Text(
+  '${_weather!.temperature.round()}°C',
+  style: const TextStyle(
+  fontSize: 50,
+  fontWeight: FontWeight.w600,
+  color: Colors.black87,
+  ),
+  ),
+
+  // Condition
+  Text(
+  _weather!.mainCondition,
+  style: const TextStyle(
+  fontSize: 22,
+  fontStyle: FontStyle.italic,
+  color: Colors.black54,
+  ),
+  ),
+
+  const SizedBox(height: 30),
