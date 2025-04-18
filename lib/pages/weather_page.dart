@@ -80,3 +80,20 @@ Widget build(BuildContext context) {
   child: Column(
   children: [
   // Search
+  Row(
+  children: [
+  Expanded(
+  child: TextField(
+  controller: _searchController,
+  decoration: InputDecoration(
+  hintText: "Search City",
+  filled: true,
+  fillColor: Colors.white,
+  prefixIcon: const Icon(Icons.search),
+  border: OutlineInputBorder(
+  borderRadius: BorderRadius.circular(12),
+  borderSide: BorderSide.none,
+  ),
+  ),
+  ),
+  ),
