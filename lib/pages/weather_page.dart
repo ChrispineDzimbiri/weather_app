@@ -155,3 +155,17 @@ Widget build(BuildContext context) {
   ),
 
   const SizedBox(height: 30),
+  Card(
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+  elevation: 4,
+  child: Padding(
+  padding: const EdgeInsets.all(16),
+  child: Column(
+  children: [
+  Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: const [
+  Text("Humidity", style: TextStyle(fontSize: 16, color: Colors.black87)),
+  Text("78%", style: TextStyle(fontSize: 16, color: Colors.black54)),
+  ],
+  ),
