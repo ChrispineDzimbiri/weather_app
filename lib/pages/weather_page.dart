@@ -155,6 +155,7 @@ Widget build(BuildContext context) {
   ),
 
   const SizedBox(height: 30),
+
   Card(
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
   elevation: 4,
