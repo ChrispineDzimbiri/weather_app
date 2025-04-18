@@ -97,3 +97,20 @@ Widget build(BuildContext context) {
   ),
   ),
   ),
+  const SizedBox(width: 10),
+  ElevatedButton(
+  style: ElevatedButton.styleFrom(
+  backgroundColor: Colors.blueAccent,
+  foregroundColor: Colors.white,
+  shape: RoundedRectangleBorder(
+  borderRadius: BorderRadius.circular(10),
+  ),
+  ),
+  onPressed: () {
+  _fetchWeather(_searchController.text);
+  },
+  child: const Text("Go"),
+  )
+  ],
+  ),
+  const SizedBox(height: 24),
