@@ -178,3 +178,10 @@ Widget build(BuildContext context) {
   Text("14 km/h", style: TextStyle(fontSize: 16, color: Colors.black54)),
   ],
   ),
+  const Divider(),
+  Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: const [
+  Text("Pressure", style: TextStyle(fontSize: 16, color: Colors.black87)),
+  Text("1013 hPa", style: TextStyle(fontSize: 16, color: Colors.black54)),
+  ],
