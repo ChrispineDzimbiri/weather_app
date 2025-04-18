@@ -185,3 +185,15 @@ Widget build(BuildContext context) {
   Text("Pressure", style: TextStyle(fontSize: 16, color: Colors.black87)),
   Text("1013 hPa", style: TextStyle(fontSize: 16, color: Colors.black54)),
   ],
+  ),
+  ],
+  ),
+  ),
+  ),
+  ],
+  ),
+  ),
+  ),
+  ),
+  );
+}
